@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
 public class PublishingService {
 
     private RestTemplate restTemplate = new RestTemplate();
-    private final String URL = "http://localhost:8082/replication/customer";
+    private final String URL = "http://lend-service:8082/replication/customer";
 
     public void publish(Customer customer) {
         HttpHeaders headers = new HttpHeaders();

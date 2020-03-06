@@ -18,7 +18,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 public class PublishingService {
 
     private RestTemplate restTemplate = new RestTemplate();
-    private final String URL = "http://localhost:8082/replication/book";
+    private final String URL = "http://lend-service:8082/replication/book";
 
     public void publish(Book book) {
         HttpHeaders headers = new HttpHeaders();
