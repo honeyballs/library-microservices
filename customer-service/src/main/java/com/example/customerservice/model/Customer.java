@@ -20,6 +20,8 @@ public class Customer {
     @JsonSerialize(using = LocalDateSerializer.class)
     private LocalDate birthday;
 
+    public Customer() {}
+
     public Customer(String id, String firstname, String lastname, String address, LocalDate birthday) {
         this.id = id;
         this.firstname = firstname;

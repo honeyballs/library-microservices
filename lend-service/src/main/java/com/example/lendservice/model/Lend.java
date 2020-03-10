@@ -24,6 +24,8 @@ public class Lend {
     private String customerId;
     private Set<String> bookIds;
 
+    public Lend() {}
+
     public Lend(String id, LocalDate returnDate, String customerId, Set<String> books) {
         this.id = id;
         this.returnDate = returnDate;

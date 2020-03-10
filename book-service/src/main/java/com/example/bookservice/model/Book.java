@@ -9,6 +9,8 @@ public class Book {
     private String isbn;
     private int stock;
 
+    public Book() {}
+
     public Book(String id, String title, String author, int year, String isbn, int stock) {
         this.id = id;
         this.title = title;

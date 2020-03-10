@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customers</title>
+</head>
+<body>
+<h1>Customers</h1>
+<h2>All customers</h2>
+<table id="customer-table" border="1">
+    <thead>
+    <tr>
+        <th align="left">Id</th>
+        <th align="left">First name</th>
+        <th align="left">Last name</th>
+        <th align="left">Address</th>
+        <th align="left">Birthday</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<h2>Add a customer</h2>
+<form id="create-form">
+    <label for="firstname">First name</label>
+    <input type="text" id="firstname" name="firstname">
+    <label for="lastname">Last name</label>
+    <input type="text" id="lastname" name="lastname">
+    <label for="address">Address</label>
+    <input type="text" id="address" name="address">
+    <label for="birthday">Birthday</label>
+    <input type="date" id="birthday" name="birthday">
+    <button id="confirm">Create</button>
+</form>
+
+<script src="main.js"></script>
+</body>
+</html>
