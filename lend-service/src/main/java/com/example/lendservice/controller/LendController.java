@@ -18,6 +18,11 @@ public class LendController {
         this.lendService = lendService;
     }
 
+    @GetMapping(PATH)
+    public ResponseEntity<Set<Lend>> getAllLends() {
+        return ResponseEntity.ok(lendService.getAll());
+    }
+
     @GetMapping(PATH + "/customer/{customerId}")
     public ResponseEntity<Set<Lend>> getLendsOfCustomer(@PathVariable("customerId") String customerId) {
         return ResponseEntity.ok(lendService.getLendsOfCustomer(customerId));

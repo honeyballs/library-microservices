@@ -1,11 +1,11 @@
-const bookUrl = "http://localhost:8081/customers";
+const customerUrl = "http://localhost:8081/customers";
 let customerData = [];
 
 fetchAllCustomers();
 document.getElementById("confirm").onclick = createCustomer;
 
 function fetchAllCustomers() {
-    fetch(bookUrl, {method: "GET", mode: "cors"})
+    fetch(customerUrl, {method: "GET", mode: "cors"})
         .then(response => response.json())
         .then(json => {
             customerData = json;
@@ -35,7 +35,7 @@ function createCustomer(event) {
         customer[key] = formData.get(key);
     }
     console.log(customer);
-    fetch(bookUrl, {
+    fetch(customerUrl, {
         method: "POST",
         mode: "cors",
         headers: {"Content-Type": "application/json"},

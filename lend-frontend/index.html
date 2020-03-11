@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lends</title>
+</head>
+<body>
+<h1>Lend Administration</h1>
+
+<h2>All borrowed books</h2>
+<table id="lend-table" border="1">
+    <thead>
+    <tr>
+        <th align="left">Id</th>
+        <th align="left">Customer</th>
+        <th align="left">Books</th>
+        <th align="left">Return Date</th>
+        <th align="left">Returned</th>
+        <th align="left">Return books</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<h2>All customers</h2>
+<table id="customer-table" border="1">
+    <thead>
+    <tr>
+        <th align="left">Id</th>
+        <th align="left">First name</th>
+        <th align="left">Last name</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<h2>Available books</h2>
+<table id="book-table" border="1">
+    <thead>
+    <tr>
+        <th align="left">Id</th>
+        <th align="left">Title</th>
+        <th align="left">ISBN</th>
+        <th align="left">Copies</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<h2>Borrow a book</h2>
+<form id="create-form">
+    <label for="customer-id">Customer Id</label>
+    <input type="text" id="customer-id" name="customer-id">
+    <label for="book-ids">Book Ids (Comma separated)</label>
+    <input type="text" id="book-ids" name="book-ids">
+    <button id="confirm">Create</button>
+</form>
+
+<script src="main.js"></script>
+</body>
+</html>

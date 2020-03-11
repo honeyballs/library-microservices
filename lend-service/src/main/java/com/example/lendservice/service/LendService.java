@@ -18,6 +18,10 @@ public class LendService {
 
     private Set<Lend> lends = new HashSet<>();
 
+    public Set<Lend> getAll() {
+        return lends;
+    }
+
     // We do not validate if enough copies are available
     public Lend lendBook(String customerId, Set<String> bookIds) {
         Lend lend = new Lend(UUID.randomUUID().toString(), LocalDate.now().plusMonths(1), customerId, bookIds);
